@@ -3,7 +3,10 @@ import Logo from "../../assets/svg/pizza-logo.svg"
 
 export default function Brand() {
   return (
-    <div className="flex gap-3 items-center">
+    <a 
+      href="/"
+      className="flex gap-3 items-center active:scale-95 duration-300"
+    >
       <img 
         className="h-12"
         src={Logo} 
@@ -17,6 +20,6 @@ export default function Brand() {
           é pizza, sim!
         </span>
       </div>
-    </div>
+    </a>
   )
 }
