@@ -16,12 +16,12 @@ export default function PromoSection() {
   useEffect(() => setPromoPizza(jsonPromoPizza), [])
 
   return (
-    <section className="bg-orange-400 py-1 pt-4 pb-16 flex justify-center">
+    <section className="bg-orange-400 py-1 px-4 pt-4 pb-16 flex justify-center">
       <div className="max-w-screen-lg w-full flex justify-center flex-col items-center sm:flex-row sm:gap-5">
 
         <div className="bg-promo-pizza bg-cover w-full h-96 flex justify-end max-w-sm bg-center">
 
-          <div className="bg-point-tag flex flex-col items-center justify-center h-20 w-20 bg-cover mr-14">
+          <div className="bg-point-tag flex flex-col items-center justify-center h-20 w-20 bg-cover mr-14 hover:scale-110 duration-300">
             <p className="text-white font-semibold text-2xl h-7">{ promoPizza?.points }</p>
             <p className="text-white text-xs mb-2">pontos</p>
           </div>

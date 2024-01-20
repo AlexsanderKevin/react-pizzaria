@@ -3,13 +3,13 @@ import Button from "../../components/Button/Button.tsx";
 
 export default function FormCard() {
   return (
-    <section className="py-1 px-4 flex justify-center">
-      <div className="max-w-screen-lg w-full flex justify-center flex-col items-center sm:flex-row sm:gap-5 bg-orange-50 p-3 -translate-y-12 rounded-xl shadow-md">
+    <section className="py-1 px-4 flex justify-center bg-orange-100">
+      <div className="max-w-screen-lg w-full flex justify-center flex-col items-center sm:flex-row sm:gap-5 bg-white p-3 -translate-y-12 rounded-xl shadow-md">
 
         <div className="h-60 w-full sm:h-full sm:w-72 bg-build-pizza bg-cover bg-center rounded-md" ></div>
 
         <div className="flex-1 flex h-full flex-col w-full p-4 pt-8 sm:pt-4">
-          <h1 className="text-4xl sm:text-5xl font-semibold text-blue-600">
+          <h1 className="text-3xl sm:text-5xl font-semibold text-blue-600">
             Ou monte sua pizza
           </h1>
           <p className="mb-5 mt-2 text-orange-400">
