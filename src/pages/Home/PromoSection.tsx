@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import jsonPromoPizza from "../../mock/promoPizza.json"
 import Button from "../../components/Button/Button.tsx";
+import { useNavigate } from "react-router-dom";
 
 interface IPromoPizza {
   price: number;
@@ -12,6 +13,7 @@ interface IPromoPizza {
 
 export default function PromoSection() {
   const [ promoPizza, setPromoPizza ] = useState<IPromoPizza|null>(null)
+  const navigate = useNavigate()
 
   useEffect(() => setPromoPizza(jsonPromoPizza), [])
 
@@ -66,7 +68,10 @@ export default function PromoSection() {
             </div>
           </div>
 
-          <Button className="sm:ml-14">
+          <Button 
+            className="sm:ml-14"
+            handleClick={() => navigate('/finish-order')}
+          >
             Eu quero!
           </Button>
         </article>

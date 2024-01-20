@@ -1,7 +1,10 @@
 import React from "react";
 import Button from "../../components/Button/Button.tsx";
+import { useNavigate } from "react-router-dom"
 
 export default function FormCard() {
+  const navigate = useNavigate()
+
   return (
     <section className="py-1 px-4 flex justify-center bg-orange-100">
       <div className="max-w-screen-lg w-full flex justify-center flex-col items-center sm:flex-row sm:gap-5 bg-white p-3 -translate-y-12 rounded-xl shadow-md">
@@ -23,7 +26,10 @@ export default function FormCard() {
             <p>+ Acompanhamento</p>
           </div>
 
-          <Button className="sm:w-40">
+          <Button 
+            className="sm:w-40"
+            handleClick={() => navigate('/form')}
+          >
             Pedir
           </Button>
         </div>
