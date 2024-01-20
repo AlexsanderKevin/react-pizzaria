@@ -16,7 +16,7 @@ export default function Brand() {
         <span className="text-white font-semibold text-2xl">
           PizzaStoom
         </span>
-        <span className=" text-blue-500 font-bold">
+        <span className=" text-blue-600 font-bold">
           é pizza, sim!
         </span>
       </div>

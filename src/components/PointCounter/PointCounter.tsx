@@ -6,10 +6,10 @@ export default function PointCounter() {
 
   return (
     <div className="flex flex-col items-end">
-      <p className="text-blue-500 font-bold hidden sm:block">
+      <p className="text-blue-600 font-bold hidden sm:block">
         Stoom Points
       </p>
-      <p className="text-blue-500 font-bold">
+      <p className="text-blue-600 font-bold">
         <span className="text-white">{ stoomPoints }</span> Pontos
       </p>
     </div>
