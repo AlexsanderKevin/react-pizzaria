@@ -1,21 +1,10 @@
 import React, { useState, useEffect } from "react";
-import jsonPromoPizza from "../../mock/promoPizza.json"
+import promoPizza from "../../mock/promoPizza.json"
 import Button from "../../components/Button/Button.tsx";
 import { useNavigate } from "react-router-dom";
 
-interface IPromoPizza {
-  price: number;
-  points: number;
-  name: string;
-  dough: string;
-  ingredients: string;
-}
-
 export default function PromoSection() {
-  const [ promoPizza, setPromoPizza ] = useState<IPromoPizza|null>(null)
   const navigate = useNavigate()
-
-  useEffect(() => setPromoPizza(jsonPromoPizza), [])
 
   return (
     <section className="bg-orange-400 py-1 px-4 pt-4 pb-16 flex justify-center">
@@ -38,6 +27,7 @@ export default function PromoSection() {
             <h1 className="text-white font-semibold text-6xl">
               Pizza do dia
             </h1>
+
             <p className="text-white text-right w-full pr-10">
               <span className="text-lg">R$</span>
               <span className="text-blue-600 font-bold text-4xl">{ promoPizza?.price.toFixed(2) }</span>
@@ -50,21 +40,13 @@ export default function PromoSection() {
             </h2>
 
             <div>
-              <p className="font-bold text-orange-700">
-                Massa:
-              </p>
-              <p className="text-orange-900 capitalize">
-                { promoPizza?.dough }
-              </p>
+              <p className="font-bold text-orange-700"> Massa: </p>
+              <p className="text-orange-900 capitalize">{ promoPizza?.dough }</p>
             </div>
 
             <div>
-              <p className="font-bold text-orange-700">
-                Ingredientes:
-              </p>
-              <p className="text-orange-900 max-w-xs">
-                { promoPizza?.ingredients }
-              </p>
+              <p className="font-bold text-orange-700"> Ingredientes: </p>
+              <p className="text-orange-900 max-w-xs">{ promoPizza?.ingredients }</p>
             </div>
           </div>
 

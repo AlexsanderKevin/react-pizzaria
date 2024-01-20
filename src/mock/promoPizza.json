@@ -3,5 +3,6 @@
   "points": 50,
   "name": "pizza napolitana",
   "dough": "napolitana",
-  "ingredients": "mussarela, peito de peru, palmito, parmesão, orégano"
+  "ingredients": "mussarela, peito de peru, palmito, parmesão, orégano",
+  "size": "média"
 }
