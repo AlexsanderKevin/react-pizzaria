@@ -4,7 +4,7 @@ import PointCounter from "../PointCounter/PointCounter.tsx";
 
 export default function Header() {
   return (
-    <header className="bg-orange-400 py-1 px-2 flex justify-center">
+    <header className="bg-orange-400 py-1 px-4 flex justify-center">
       <div className="max-w-screen-lg w-full flex justify-between">
         <Brand/>
         <PointCounter/>
