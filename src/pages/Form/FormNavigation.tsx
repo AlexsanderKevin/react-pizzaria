@@ -8,8 +8,28 @@ export default function FormNavigation() {
   const navigate = useNavigate()
 
   const handleFinalization = (): void => {
-    alert('Pedido finalizado!')
-    navigate('/')
+    const { size, dough, filling, border } = formContext!
+    const areAllFieldsChecked = size && dough && filling && border
+
+    if (areAllFieldsChecked) {
+      alert('Pedido finalizado!')
+      navigate('/')
+    }
+    else {
+      const missingItems = [ 
+        !size && 'Tamanho', 
+        !dough && 'Massa', 
+        !filling && 'Recheio', 
+        !border && 'Borda' 
+      ]
+      .filter(item => item !== false)
+      .toString()
+      .split(',')
+      .join(', ')
+
+      alert(`Você esqueceu de selecionar: ${missingItems.toString()}`)
+    }
+
   }
 
   return (

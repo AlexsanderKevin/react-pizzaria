@@ -8,7 +8,6 @@ export default function OrderPreview() {
     <article className="flex flex-col gap-6 mt-14 mb-10 flex-1">
       <h1 className="text-orange-400 font-semibold text-2xl">
         { Number(formContext?.step) < 5 ? 'Pré visualização' : 'Finalizar Pedido'}
-        
       </h1>
 
       {formContext?.size && 
@@ -37,7 +36,7 @@ export default function OrderPreview() {
 
       {formContext?.filling && 
         <div>
-          <p className="font-semibold text-orange-400">Ingredientes:</p>
+          <p className="font-semibold text-orange-400">Recheio:</p>
           <p className="text-orange-900 capitalize">
             { formContext.filling.name }
             <span className="ml-5 text-sm text-blue-500">
