@@ -9,6 +9,7 @@ interface IContextTypes {
   step: number;
   nextStep: () => void;
   prevStep: () => void;
+  jumpToStep: (step: number) => void;
   size: IFormItem | null; 
   setSize: React.Dispatch<React.SetStateAction<IFormItem|null>>;
   dough: IFormItem | null;
@@ -45,22 +46,27 @@ export const FormProvider = ({ children }: IProvicerProps ) => {
     )
   }, [ size, dough, ingredients, addons ])
 
-  const nextStep = () => {
+  const nextStep = (): void => {
     const next = (step + 1) > 5 ? 5 : step + 1 
     setStep(next)
     navigate(next.toString())
   }
 
-  const prevStep = () => {
+  const prevStep = (): void => {
     const prev = (step - 1) < 1 ? 1 : step - 1 
     setStep(prev)
     navigate(prev.toString())
   }
 
+  const jumpToStep = (step: number): void => {
+    setStep(step)
+    navigate(step.toString())
+  }
+
   return (
     <FormContext.Provider
       value={{
-        step, nextStep, prevStep,
+        step, nextStep, prevStep, jumpToStep,
         size, setSize, 
         dough, setDough, 
         ingredients, setIngredients,

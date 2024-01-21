@@ -8,7 +8,10 @@ export function Step({ stepNumber }: IStepProps) {
   const formContext = useContext( FormContext )
 
   return(
-    <div className="flex flex-col items-center relative">
+    <button 
+      className="flex flex-col items-center relative"
+      onClick={() => formContext?.jumpToStep(stepNumber)}
+    >
       <div 
         className={`
           flex justify-center items-center border-4  rounded-full h-10 w-10  font-bold
@@ -22,7 +25,7 @@ export function Step({ stepNumber }: IStepProps) {
         `}
       >{stepNumber}</div>
       <p className="w-14 text-sm text-center">Passo {stepNumber}</p>
-    </div>
+    </button>
   )
 }
 
