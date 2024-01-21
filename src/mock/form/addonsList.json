@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Brotinho",
+    "imgUrl": "",
+    "description": "15cm de diâmetro, serve 1 pessoa",
+    "price": 15
+  },
+  {
+    "name": "Média",
+    "imgUrl": "",
+    "description": "30cm de diâmetro, serve 4 pessoa",
+    "price": 20
+  },
+  {
+    "name": "Grande",
+    "imgUrl": "",
+    "description": "35cm de diâmetro, serve 6 pessoa",
+    "price": 30
+  },
+  {
+    "name": "Gigante",
+    "imgUrl": "",
+    "description": "40cm de diâmetro, serve 8 pessoa",
+    "price": 40
+  }
+]

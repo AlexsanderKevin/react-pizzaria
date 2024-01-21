@@ -5,7 +5,10 @@ import OrderPreview from "./OrderPreview.tsx";
 import { Route, Routes } from "react-router-dom";
 import FormNavigation from "./FormNavigation.tsx";
 import ItemSelection from "./ItemSelection.tsx";
-import SizeList from "../../mock/form/size.json"
+import sizeList from "../../mock/form/sizeList.json"
+import doughList from "../../mock/form/doughList.json"
+import ingredientList from "../../mock/form/ingredientList.json"
+import addonsList from "../../mock/form/addonsList.json"
 
 export default function Form() {
   const formContext = useContext( FormContext )
@@ -44,16 +47,16 @@ export default function Form() {
           <div className="flex-1">
             <Routes>
               <Route path="/1" element={
-                <ItemSelection title="Escolha o Tamanho" itemsList={SizeList}/>
+                <ItemSelection title="Escolha o Tamanho" itemsList={sizeList}/>
               }/>
               <Route path="/2" element={
-                <ItemSelection title="Escolha a Massa" itemsList={SizeList}/>
+                <ItemSelection title="Escolha a Massa" itemsList={doughList}/>
               }/>
               <Route path="/3" element={
-                <ItemSelection title="Escolha os Ingredientes" itemsList={SizeList} totalItems={3}/>
+                <ItemSelection title="Escolha os Ingredientes" itemsList={ingredientList} totalItems={3}/>
               }/>
               <Route path="/4" element={
-                <ItemSelection title="Escolha o Acompanhamento" itemsList={SizeList}/>
+                <ItemSelection title="Escolha o Acompanhamento" itemsList={addonsList}/>
               }/>
               <Route path="/5" element={ null } />
             </Routes>

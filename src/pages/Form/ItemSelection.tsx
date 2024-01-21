@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import FormCard from "./FormCard.tsx";
-import Sizes from "../../mock/form/size.json"
 
 interface IItem {
   name: string;
@@ -14,7 +13,7 @@ interface IItemSelectionProps {
   itemsList: IItem[]
 }
 export default function ItemSelection({ title, totalItems = 1, itemsList }: IItemSelectionProps) {
-  const [ itemsSelected, setItemsSelected ] = useState<number>(0)
+  const [ itemsSelected, setItemsSelected ] = useState<number>(1)
 
   return (
     <section className="mb-10">
@@ -23,10 +22,12 @@ export default function ItemSelection({ title, totalItems = 1, itemsList }: IIte
           {title}:
         </h1>
 
-        <p className="bg-gray-300 text-gray-700 font-semibold text-xs py-1 px-4 rounded">0 / {totalItems}</p>
+        <p className="bg-gray-300 text-gray-700 font-semibold text-xs py-1 px-4 rounded">
+          {itemsSelected} / {totalItems}
+        </p>
       </div>
 
-      <div>
+      <div className="sm:max-h-96 sm:overflow-auto sm:pr-3">
         {itemsList.map(item => <FormCard key={item.name} {...item}/>)}
       </div>
     </section>

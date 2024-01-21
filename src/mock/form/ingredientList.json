@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Brotinho",
+    "imgUrl": "",
+    "description": "",
+    "price": 15
+  },
+  {
+    "name": "Média",
+    "imgUrl": "",
+    "description": "",
+    "price": 20
+  },
+  {
+    "name": "Grande",
+    "imgUrl": "",
+    "description": "",
+    "price": 30
+  },
+  {
+    "name": "Gigante",
+    "imgUrl": "",
+    "description": "",
+    "price": 40
+  }
+]
