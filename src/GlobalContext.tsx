@@ -1,4 +1,4 @@
-import React, { ReactNode, SetStateAction, useEffect, useState } from "react";
+import React, { ReactNode, useEffect, useState } from "react";
 
 interface IContextTypes {
   stoomPoints: number;

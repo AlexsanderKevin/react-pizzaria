@@ -1,7 +1,7 @@
 import React, { ReactNode } from "react";
 
 interface IButtonProps {
-  type: string;
+  type?: string;
   children: ReactNode;
   className?: string | undefined;
   handleClick?: () => void;
