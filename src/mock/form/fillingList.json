@@ -1,25 +1,25 @@
 [
   {
     "name": "Brotinho",
-    "imgUrl": "",
+    "imgUrl": "build-pizza.png",
     "description": "",
     "price": 15
   },
   {
     "name": "Média",
-    "imgUrl": "",
+    "imgUrl": "build-pizza.png",
     "description": "",
     "price": 20
   },
   {
     "name": "Grande",
-    "imgUrl": "",
+    "imgUrl": "build-pizza.png",
     "description": "",
     "price": 30
   },
   {
     "name": "Gigante",
-    "imgUrl": "",
+    "imgUrl": "build-pizza.png",
     "description": "",
     "price": 40
   }

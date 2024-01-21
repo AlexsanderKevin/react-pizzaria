@@ -1,26 +1,20 @@
 [
   {
-    "name": "Brotinho",
-    "imgUrl": "",
-    "description": "",
-    "price": 15
+    "name": "Nova-Iorquina",
+    "description": "Uma massa mais grossa e levemente crocante por fora. Costuma ser servida em fatias grossas e consumida sem talheres.",
+    "price": 10,
+    "imgUrl": "https://imgs.search.brave.com/b5eB5iTmgYHUPGqdim_2j6u8asfMN9imtJ7setHmvgw/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9zMi5n/bGJpbWcuY29tL2lH/MU1tb0V6QXctenVX/VDUwSFI1NWQtdlpN/QT0vc21hcnQvZS5n/bGJpbWcuY29tL29n/L2VkL2Yvb3JpZ2lu/YWwvMjAxOC8wNS8x/Ni9wYXVsaWUtZ2Vl/XzIwMThfMTIuLXBh/dWxpZS1nZWVzX21h/ZXZlLmpwZw"
   },
   {
-    "name": "Média",
-    "imgUrl": "",
-    "description": "",
-    "price": 20
+    "name": "Siciliana",
+    "description": "Uma massa mais grossa e levemente crocante por fora. Costuma ser servida em fatias grossas e consumida sem talheres.",
+    "price": 10,
+    "imgUrl": "https://imgs.search.brave.com/YdHIAr6dwHPUXEgnVu2tqNcU--W8jKPI9ttAExQouog/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9teWZv/b2Rib29rLmNvbS5h/dS9zaXRlcy9kZWZh/dWx0L2ZpbGVzL3N0/eWxlcy9jYXJkX2Zf/bW9sby9wdWJsaWMv/cmVjaXBlX3Bob3Rv/L0JyZXYyMDE0NTQz/MF8wLmpwZw"
   },
   {
-    "name": "Grande",
-    "imgUrl": "",
-    "description": "",
-    "price": 30
-  },
-  {
-    "name": "Gigante",
-    "imgUrl": "",
-    "description": "",
-    "price": 40
+    "name": "Napolitana",
+    "description": "Seu sabor e textura únicos são assados em um forno a lenha com cúpula, a massa é amassada a mão com, no máximo, 35  centímetros de diâmetro e um terço de centímetro de espessura.",
+    "price": 15,
+    "imgUrl": "https://imgs.search.brave.com/V6uEL79EpnkGzzG_GGAG6mUmOXcba2mQWx_aQ7YdmQs/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/ZXN0YWRhby5jb20u/YnIvcmVzaXplci9a/Z1JTbExBVGNZSTBN/QndZWGg2NzdPb2Y4/MUk9LzcyMHg1MDMv/ZmlsdGVyczpmb3Jt/YXQoanBnKTpxdWFs/aXR5KDgwKS9jbG91/ZGZyb250LXVzLWVh/c3QtMS5pbWFnZXMu/YXJjcHVibGlzaGlu/Zy5jb20vZXN0YWRh/by9NSEVCN1YyV1JG/RFZIQlhQRlA2UkZZ/WjY2VS5qcGc"
   }
 ]

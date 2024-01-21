@@ -9,11 +9,10 @@ interface IItem {
 }
 interface IItemSelectionProps {
   title: string;
-  totalItems?: number|undefined;
   itemsList: IItem[]
 }
-export default function ItemSelection({ title, totalItems = 1, itemsList }: IItemSelectionProps) {
-  const [ itemsSelected, setItemsSelected ] = useState<number>(1)
+export default function ItemSelection({ title, itemsList }: IItemSelectionProps) {
+  const [ itemsSelected, setItemsSelected ] = useState<number>(0)
 
   return (
     <section className="mb-10">
@@ -23,11 +22,11 @@ export default function ItemSelection({ title, totalItems = 1, itemsList }: IIte
         </h1>
 
         <p className="bg-gray-300 text-gray-700 font-semibold text-xs py-1 px-4 rounded">
-          {itemsSelected} / {totalItems}
+          {itemsSelected} / 1
         </p>
       </div>
 
-      <div className="sm:max-h-96 sm:overflow-auto sm:pr-3">
+      <div className="">
         {itemsList.map(item => <FormCard key={item.name} {...item}/>)}
       </div>
     </section>

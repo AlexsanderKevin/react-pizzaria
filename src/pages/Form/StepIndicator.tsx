@@ -1,4 +1,4 @@
-import React, { ReactNode, useContext } from "react";
+import React, { ReactNode, useContext, useEffect } from "react";
 import { FormContext } from "./FormContext.tsx";
 
 interface IStepProps {
@@ -7,12 +7,17 @@ interface IStepProps {
 export function Step({ stepNumber }: IStepProps) {
   const formContext = useContext( FormContext )
 
+  useEffect(() => {
+    const currentStep = window.location.href.charAt(window.location.href.length - 1)
+    formContext?.setStep(Number(currentStep) || 1)
+  }, [])
+
   return(
     <button 
       className="flex flex-col items-center relative"
       onClick={() => formContext?.jumpToStep(stepNumber)}
     >
-      <div 
+      <div
         className={`
           flex justify-center items-center border-4  rounded-full h-10 w-10  font-bold
 

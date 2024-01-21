@@ -1,25 +1,25 @@
 [
   {
     "name": "Brotinho",
-    "imgUrl": "",
+    "imgUrl": "https://imgs.search.brave.com/RS1runeq_IY-E7DIVkUrXj8qFak6ojz1Y1sTsf_pLPY/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9yZWNl/aXRhdG9kYWhvcmEu/Y29tLmJyL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDE1LzEwL3Bp/enphLWJyb3Rpbmhv/LWZhY2UuanBn",
     "description": "15cm de diâmetro, serve 1 pessoa",
     "price": 15
   },
   {
     "name": "Média",
-    "imgUrl": "",
+    "imgUrl": "https://imgs.search.brave.com/Jv09P_-4F5COlvb4_NCc6vrTWAsjFW7CGwOeH4iCADo/rs:fit:860:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy8y/LzJhL1BpenphX2Nh/cHJpY2Npb3NhLmpw/Zw",
     "description": "30cm de diâmetro, serve 4 pessoa",
     "price": 20
   },
   {
     "name": "Grande",
-    "imgUrl": "",
+    "imgUrl": "https://imgs.search.brave.com/WfLKynPDWEI8fGryYprDDozuTllEfpsO1mz0pK7v1d0/rs:fit:500:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAwLzI3LzU3Lzk2/LzM2MF9GXzI3NTc5/NjUyX3RNN1Y0ZlpC/Qnc4UkxtWm8wQmk4/V2h0TzJFb3NUUkZE/LmpwZw",
     "description": "35cm de diâmetro, serve 6 pessoa",
     "price": 30
   },
   {
     "name": "Gigante",
-    "imgUrl": "",
+    "imgUrl": "https://imgs.search.brave.com/nq7e8axjo1S_yd3lRDuv04Xre8n2lHAUpoyVHyfQNoM/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/Zm90b3MtcHJlbWl1/bS9waXp6YS1kZS1i/cm9jb2xpcy1jb20t/YXplaXRvbmFzLXBy/ZXRhcy1uYS1wbGFj/YS1kZS1tYWRlaXJh/LWUtbGVndW1lcy1u/by1mdW5kb180OTEx/MzAtMTcxNC5qcGc_/c2l6ZT02MjYmZXh0/PWpwZw",
     "description": "40cm de diâmetro, serve 8 pessoa",
     "price": 40
   }

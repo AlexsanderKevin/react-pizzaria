@@ -1,25 +1,25 @@
 [
   {
     "name": "Brotinho",
-    "imgUrl": "",
+    "imgUrl": "build-pizza.png",
     "description": "15cm de diâmetro, serve 1 pessoa",
     "price": 15
   },
   {
     "name": "Média",
-    "imgUrl": "",
+    "imgUrl": "build-pizza.png",
     "description": "30cm de diâmetro, serve 4 pessoa",
     "price": 20
   },
   {
     "name": "Grande",
-    "imgUrl": "",
+    "imgUrl": "build-pizza.png",
     "description": "35cm de diâmetro, serve 6 pessoa",
     "price": 30
   },
   {
     "name": "Gigante",
-    "imgUrl": "",
+    "imgUrl": "build-pizza.png",
     "description": "40cm de diâmetro, serve 8 pessoa",
     "price": 40
   }

@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Button from "../../components/Button/Button.tsx";
 import { useNavigate } from "react-router-dom"
 
 export default function FormCard() {
   const navigate = useNavigate()
+  const [ step, setStep ] = useState<number>(1)
+
+  useEffect(() => {
+    setStep(
+      Number(localStorage.getItem('currentStep')) || 1
+    )
+  }, [])
 
   return (
     <section className="py-1 px-4 flex justify-center bg-orange-100">
@@ -21,7 +28,7 @@ export default function FormCard() {
 
           <div className="text-orange-900 mb-5">
             <p>1x Massa</p>
-            <p>3x Ingredientes</p>
+            <p>1x Recheio</p>
             <p>1x Borda</p>
             <p>+ Acompanhamento</p>
           </div>

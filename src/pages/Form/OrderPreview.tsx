@@ -5,7 +5,7 @@ export default function OrderPreview() {
   const formContext = useContext( FormContext )
 
   return(
-    <article className="flex flex-col gap-6 mt-14 mb-10">
+    <article className="flex flex-col gap-6 mt-14 mb-10 flex-1">
       <h1 className="text-orange-400 font-semibold text-2xl">
         { Number(formContext?.step) < 5 ? 'Pré visualização' : 'Finalizar Pedido'}
         

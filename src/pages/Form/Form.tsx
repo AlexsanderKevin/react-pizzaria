@@ -7,7 +7,7 @@ import FormNavigation from "./FormNavigation.tsx";
 import ItemSelection from "./ItemSelection.tsx";
 import sizeList from "../../mock/form/sizeList.json"
 import doughList from "../../mock/form/doughList.json"
-import ingredientList from "../../mock/form/ingredientList.json"
+import fillingList from "../../mock/form/fillingList.json"
 import addonsList from "../../mock/form/addonsList.json"
 
 export default function Form() {
@@ -53,7 +53,7 @@ export default function Form() {
                 <ItemSelection title="Escolha a Massa" itemsList={doughList}/>
               }/>
               <Route path="/3" element={
-                <ItemSelection title="Escolha os Ingredientes" itemsList={ingredientList} totalItems={3}/>
+                <ItemSelection title="Escolha o Recheio" itemsList={fillingList}/>
               }/>
               <Route path="/4" element={
                 <ItemSelection title="Escolha o Acompanhamento" itemsList={addonsList}/>

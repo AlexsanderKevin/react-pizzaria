@@ -1,5 +1,5 @@
 import React, { ReactNode, useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
 interface IFormItem {
   name: string;
@@ -7,6 +7,7 @@ interface IFormItem {
 }
 interface IContextTypes {
   step: number;
+  setStep: React.Dispatch<React.SetStateAction<number>>;
   nextStep: () => void;
   prevStep: () => void;
   jumpToStep: (step: number) => void;
@@ -50,6 +51,7 @@ export const FormProvider = ({ children }: IProvicerProps ) => {
     const next = (step + 1) > 5 ? 5 : step + 1 
     setStep(next)
     navigate(next.toString())
+    localStorage.setItem('currentStep', next.toString())
   }
 
   const prevStep = (): void => {
@@ -66,7 +68,7 @@ export const FormProvider = ({ children }: IProvicerProps ) => {
   return (
     <FormContext.Provider
       value={{
-        step, nextStep, prevStep, jumpToStep,
+        step, setStep, nextStep, prevStep, jumpToStep,
         size, setSize, 
         dough, setDough, 
         ingredients, setIngredients,
