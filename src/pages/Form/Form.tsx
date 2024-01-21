@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import StepIndicator from "./StepIndicator.tsx";
 import { FormProvider } from "./FormContext.tsx";
+import OrderPreview from "./OrderPreview.tsx";
 
 export default function Form() {
+
   return(
     <FormProvider>
       <section className="bg-orange-400 py-1 px-4 pt-10 pb-10 flex justify-center">
@@ -13,7 +15,12 @@ export default function Form() {
 
       <section className="bg-orange-100 py-1 px-4 pt-4 pb-16 flex justify-center">
         <div className="max-w-screen-lg w-full flex flex-col sm:gap-5 bg-white p-10 -translate-y-12 rounded-xl shadow-md gap-5">
-          <StepIndicator/>
+
+          <div>
+            <StepIndicator/>
+            <OrderPreview/>
+          </div>
+
         </div>
       </section>
     </FormProvider>

@@ -34,10 +34,10 @@ export const FormProvider = ({ children }: IProvicerProps ) => {
 
   useEffect(() => {
     setPriceSum(
-      Number(size?.price) +
-      Number(dough?.price) +
-      Number(ingredients?.price) +
-      Number(addons?.price)
+      (size?.price || 0) +
+      (dough?.price || 0) +
+      (ingredients?.price || 0) +
+      (addons?.price || 0)
     )
   }, [ size, dough, ingredients, addons ])
 
