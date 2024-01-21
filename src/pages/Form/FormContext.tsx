@@ -1,4 +1,5 @@
 import React, { ReactNode, useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 interface IFormItem {
   name: string;
@@ -6,7 +7,8 @@ interface IFormItem {
 }
 interface IContextTypes {
   step: number;
-  setStep: React.Dispatch<React.SetStateAction<number>>;
+  nextStep: () => void;
+  prevStep: () => void;
   size: IFormItem | null; 
   setSize: React.Dispatch<React.SetStateAction<IFormItem|null>>;
   dough: IFormItem | null;
@@ -32,6 +34,8 @@ export const FormProvider = ({ children }: IProvicerProps ) => {
   const [ addons, setAddons ] = useState<IFormItem|null>(null)
   const [ priceSum, setPriceSum ] = useState<number>(0)
 
+  const navigate = useNavigate()
+
   useEffect(() => {
     setPriceSum(
       (size?.price || 0) +
@@ -41,10 +45,22 @@ export const FormProvider = ({ children }: IProvicerProps ) => {
     )
   }, [ size, dough, ingredients, addons ])
 
+  const nextStep = () => {
+    const next = (step + 1) > 5 ? 5 : step + 1 
+    setStep(next)
+    navigate(next.toString())
+  }
+
+  const prevStep = () => {
+    const prev = (step - 1) < 1 ? 1 : step - 1 
+    setStep(prev)
+    navigate(prev.toString())
+  }
+
   return (
     <FormContext.Provider
       value={{
-        step, setStep,
+        step, nextStep, prevStep,
         size, setSize, 
         dough, setDough, 
         ingredients, setIngredients,

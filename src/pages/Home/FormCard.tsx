@@ -28,7 +28,7 @@ export default function FormCard() {
 
           <Button 
             className="sm:w-40"
-            handleClick={() => navigate('/form')}
+            handleClick={() => navigate('/form/1')}
           >
             Pedir
           </Button>

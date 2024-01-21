@@ -14,8 +14,8 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path='/' element={<Home />}/>
-            <Route path='/form' element={<Form />}/>
-            <Route path='/finish-order' element={<FinishOrder />}/>
+            <Route path='form/*' element={<Form />}/>
+            <Route path='finish-order' element={<FinishOrder />}/>
             <Route path='*' element={<NotFound />}/>
           </Routes>
         </BrowserRouter>
