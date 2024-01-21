@@ -3,9 +3,9 @@ import React, { ReactNode } from "react";
 interface IButtonProps {
   type?: string;
   children: ReactNode;
-  className?: string | undefined;
+  className?: string|undefined;
   handleClick?: () => void;
-  disabled: boolean;
+  disabled?: boolean|undefined;
 }
 export default function Button({ children, className, handleClick, type = 'primary', disabled = false }: IButtonProps) {
   return (

@@ -27,9 +27,8 @@ export function Step({ stepNumber }: IStepProps) {
 }
 
 export default function StepIndicator() {
-
   return (
-    <div className="flex w-full  gap-5">
+    <div className='flex w-full justify-center gap-5' >
 
       <Step stepNumber={1}/>
       <Step stepNumber={2}/>

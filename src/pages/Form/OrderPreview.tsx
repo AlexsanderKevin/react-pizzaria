@@ -6,7 +6,10 @@ export default function OrderPreview() {
 
   return(
     <article className="flex flex-col gap-6 mt-14 mb-10">
-      <h1 className="text-orange-400 font-semibold text-2xl">Pré visualização</h1>
+      <h1 className="text-orange-400 font-semibold text-2xl">
+        { Number(formContext?.step) < 5 ? 'Pré visualização' : 'Finalizar Pedido'}
+        
+      </h1>
 
       {formContext?.size && 
         <div>
