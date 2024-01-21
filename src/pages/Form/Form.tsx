@@ -8,7 +8,7 @@ import ItemSelection from "./ItemSelection.tsx";
 import sizeList from "../../mock/form/sizeList.json"
 import doughList from "../../mock/form/doughList.json"
 import fillingList from "../../mock/form/fillingList.json"
-import addonsList from "../../mock/form/addonsList.json"
+import borderList from "../../mock/form/borderList.json"
 
 export default function Form() {
   const formContext = useContext( FormContext )
@@ -56,7 +56,7 @@ export default function Form() {
                 <ItemSelection title="Escolha o Recheio" itemsList={fillingList}/>
               }/>
               <Route path="/4" element={
-                <ItemSelection title="Escolha o Acompanhamento" itemsList={addonsList}/>
+                <ItemSelection title="Escolha a Borda" itemsList={borderList}/>
               }/>
               <Route path="/5" element={ null } />
             </Routes>

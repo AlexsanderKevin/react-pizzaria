@@ -47,13 +47,13 @@ export default function OrderPreview() {
         </div>
       }
 
-      {formContext?.addons && 
+      {formContext?.border && 
         <div>
           <p className="font-semibold text-orange-400">Acompanhamento:</p>
           <p className="text-orange-900 capitalize">
-            { formContext.addons.name }
+            { formContext.border.name }
             <span className="ml-5 text-sm text-blue-500">
-              R${ formContext.addons.price.toFixed(2) }
+              R${ formContext.border.price.toFixed(2) }
             </span>
           </p>
         </div>

@@ -1,26 +1,32 @@
 [
   {
-    "name": "Brotinho",
-    "imgUrl": "build-pizza.png",
-    "description": "",
-    "price": 15
-  },
-  {
-    "name": "Média",
-    "imgUrl": "build-pizza.png",
-    "description": "",
+    "name": "Peperoni",
+    "imgUrl": "https://imgs.search.brave.com/ValhGRzKqdYMvYbuSX3UvhPvbfqtFQ2vqRGnsrnY3qY/rs:fit:860:0:0/g:ce/aHR0cHM6Ly8ydHJl/bmRpZXMuY29tL2hl/cm8vMjAyMy8wNC9w/aXp6YXBlcHBlcm9u/aS5qcGc_d2lkdGg9/NzY4JmFzcGVjdF9y/YXRpbz0xNjo5JmZv/cm1hdD1ub3dlYnA",
+    "description": "Queijo mussarela, oregano, peperoni fatiado, azeitona preta",
     "price": 20
   },
   {
-    "name": "Grande",
-    "imgUrl": "build-pizza.png",
-    "description": "",
-    "price": 30
+    "name": "Frango",
+    "imgUrl": "https://imgs.search.brave.com/MYCnmAMnZ7HWLy7WtA1_s0NAmylaU46MhjPB8ieZEus/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9wcmV2/aWV3cy4xMjNyZi5j/b20vaW1hZ2VzL2Vz/dHVkaW9jb25jZWl0/by9lc3R1ZGlvY29u/Y2VpdG8yMDA1L2Vz/dHVkaW9jb25jZWl0/bzIwMDUwMDM3NC8x/NDc1ODU5NzEtY2hp/Y2tlbi1waXp6YS13/aXRoLWNhdHVwaXJ5/LWNoZWVzZS1pbi1i/cmF6aWwtaXQtaXMt/Y2FsbGVkLXBpenph/LWRlLWZyYW5nby1j/b20tY2F0dXBpcnku/anBn",
+    "description": "Queijo mussarela, frango desfiado, requeijão cremoso, milho, azeitona preta",
+    "price": 15
   },
   {
-    "name": "Gigante",
-    "imgUrl": "build-pizza.png",
-    "description": "",
-    "price": 40
+    "name": "Brócolis",
+    "imgUrl": "https://imgs.search.brave.com/esh1Jf9byvb8mhv1zM7u0-1Lk2moHwpv5zidFwHPcX4/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9yZXZp/c3Rhc2Fib3Jlc2Rv/c3VsLmNvbS5ici93/cC1jb250ZW50L3Vw/bG9hZHMvMjAxNy8w/Ny9QSVpaQS1ERS1C/Uk9DT0xJUy1MaXZy/by1kZS1SZWNlaXRh/cy1NZXNhLUJyYXNp/bC1TZXNjLTEtNjQw/eDg0MS5qcGc",
+    "description": "Queijo mussarela, brocolis, oregano, azeitona preta",
+    "price": 10
+  },
+  {
+    "name": "4 Queijos",
+    "imgUrl": "https://imgs.search.brave.com/qahZ21mGdX4BgCxa0MvWJfuNGW9F1PW29-RS6pqqD1o/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/Zm90b3MtcHJlbWl1/bS91bWEtZmF0aWEt/ZGUtcGl6emEtaXRh/bGlhbmEtcXVlbnRl/LWNvbS1xdWVpam8t/ZGUtYWxvbmdhbWVu/dG8tcGl6emEtcXVh/dHJvLXF1ZWlqb3Mt/Y29tLW1hbmplcmlj/YW9fNzk3ODItMzI2/NC5qcGc_c2l6ZT02/MjYmZXh0PWpwZw",
+    "description": "Queijo mussarela, queijo parmesão, queijo catupiry, queijo gorgonzola, azeitona preta",
+    "price": 10
+  },
+  {
+    "name": "Calabreza",
+    "imgUrl": "https://imgs.search.brave.com/i8qwvycBL5zUfVICNM43WTMFk6wVPNAMwAKJY7mkQw0/rs:fit:500:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzAzLzQ5LzY5Lzk3/LzM2MF9GXzM0OTY5/OTcwMV80WktZdWNH/MlRUOXZVbGYzbUdJ/WmJiR3lIUmtYdUln/cC5qcGc",
+    "description": "Queijo mussarela, calabraza fatiada, cebola, azeitona preta",
+    "price": 15
   }
 ]

@@ -7,7 +7,6 @@ interface ICardProps {
   imgUrl: string
 }
 export default function FormCard({ imgUrl, name, description, price }: ICardProps) {
-  console.log(imgUrl)
 
   return (
     <div className="mb-3 shadow rounded-lg border flex">

@@ -30,7 +30,6 @@ export default function FormCard() {
             <p>1x Massa</p>
             <p>1x Recheio</p>
             <p>1x Borda</p>
-            <p>+ Acompanhamento</p>
           </div>
 
           <Button 

@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Normal",
+    "imgUrl": "https://imgs.search.brave.com/4YbncR45Dl-1_aplA7w5ukon2dxk0-d_XrZT8tQ0dxg/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/c2Fib3JuYW1lc2Eu/Y29tLmJyL21lZGlh/L2syL2l0ZW1zL2Nh/Y2hlL2JjNTNkNTA3/YzI2NzcwZThmMjk0/ZmNiZjkyZWYwODY0/X1hMLmpwZw",
+    "description": "Borda sem recheio",
+    "price": 0
+  },
+  {
+    "name": "Catupiry",
+    "imgUrl": "https://imgs.search.brave.com/-2eoRaEwXW0KEpQmueQcS_Lssi0OdSClqKdrljzJNco/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZG4u/Y2FzYXByYXRpY2Fx/dWFsaXRhLmNvbS5i/ci93cC1jb250ZW50/L3VwbG9hZHMvMjAy/MS8wNC8zMTg5LXBh/cmEtZmF6ZXItcGl6/emEtY29tLWJvcmRh/LXJlY2hlYWRhLWNv/bS1vcmlnLTIuanBn",
+    "description": "Borda recheada com queijo catupiry",
+    "price": 5
+  },
+  {
+    "name": "Cheddar",
+    "imgUrl": "https://imgs.search.brave.com/rS42HgpD27CRDD9KqLX-JBoo2tRX2WRku6hYhgVo2Z0/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/cGl6emFwcmltZS5j/b20uYnIvd3AtY29u/dGVudC91cGxvYWRz/LzIwMTgvMDYvY29t/Ym8tc3VwZXIuanBn",
+    "description": "Borda recheada com queijo Cheddar",
+    "price": 5
+  },
+  {
+    "name": "Chocolate",
+    "imgUrl": "https://imgs.search.brave.com/jAbetIzw7tXMj17MYVB6BYKiM8B95ChW4thJuRXOjW8/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9wdC5w/ZXRpdGNoZWYuY29t/L2ltZ3VwbC9hcnRp/Y2xlL21kLTk1OC5q/cGc",
+    "description": "Borda recheada com chocolate meio amargo",
+    "price": 10
+  }
+]

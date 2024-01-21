@@ -15,10 +15,10 @@ interface IContextTypes {
   setSize: React.Dispatch<React.SetStateAction<IFormItem|null>>;
   dough: IFormItem | null;
   setDough: React.Dispatch<React.SetStateAction<IFormItem|null>>;
-  ingredients: IFormItem | null;
-  setIngredients: React.Dispatch<React.SetStateAction<IFormItem|null>>;
-  addons: IFormItem | null;
-  setAddons: React.Dispatch<React.SetStateAction<IFormItem|null>>;
+  filling: IFormItem | null;
+  setFilling: React.Dispatch<React.SetStateAction<IFormItem|null>>;
+  border: IFormItem | null;
+  setBorder: React.Dispatch<React.SetStateAction<IFormItem|null>>;
   priceSum: number;
   setPriceSum: React.Dispatch<React.SetStateAction<number>>
 }
@@ -32,8 +32,8 @@ export const FormProvider = ({ children }: IProvicerProps ) => {
   const [ step, setStep ] = useState<number>(1)
   const [ size, setSize ] = useState<IFormItem|null>(null)
   const [ dough, setDough ] = useState<IFormItem|null>(null)
-  const [ ingredients, setIngredients ] = useState<IFormItem|null>(null)
-  const [ addons, setAddons ] = useState<IFormItem|null>(null)
+  const [ filling, setFilling ] = useState<IFormItem|null>(null)
+  const [ border, setBorder ] = useState<IFormItem|null>(null)
   const [ priceSum, setPriceSum ] = useState<number>(0)
 
   const navigate = useNavigate()
@@ -42,10 +42,10 @@ export const FormProvider = ({ children }: IProvicerProps ) => {
     setPriceSum(
       (size?.price || 0) +
       (dough?.price || 0) +
-      (ingredients?.price || 0) +
-      (addons?.price || 0)
+      (filling?.price || 0) +
+      (border?.price || 0)
     )
-  }, [ size, dough, ingredients, addons ])
+  }, [ size, dough, filling, border ])
 
   const nextStep = (): void => {
     const next = (step + 1) > 5 ? 5 : step + 1 
@@ -71,8 +71,8 @@ export const FormProvider = ({ children }: IProvicerProps ) => {
         step, setStep, nextStep, prevStep, jumpToStep,
         size, setSize, 
         dough, setDough, 
-        ingredients, setIngredients,
-        addons, setAddons,
+        filling, setFilling,
+        border, setBorder,
         priceSum, setPriceSum
       }}
     >
