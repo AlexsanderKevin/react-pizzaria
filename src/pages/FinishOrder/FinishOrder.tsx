@@ -52,7 +52,7 @@ export default function FinishOrder() {
             <p className="text-orange-900 capitalize">R${ promoPizza?.price.toFixed(2) }</p>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-3 sm:gap-5 mt-5">
+          <div className="flex flex-col-reverse sm:flex-row gap-3 sm:gap-5 mt-5">
             <Button 
               type="secondary"
               handleClick={() => navigate('/')}
