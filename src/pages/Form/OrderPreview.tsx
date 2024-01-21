@@ -35,13 +35,13 @@ export default function OrderPreview() {
         </div>
       }
 
-      {formContext?.ingredients && 
+      {formContext?.filling && 
         <div>
           <p className="font-semibold text-orange-400">Ingredientes:</p>
           <p className="text-orange-900 capitalize">
-            { formContext.ingredients.name }
+            { formContext.filling.name }
             <span className="ml-5 text-sm text-blue-500">
-              R${ formContext.ingredients.price.toFixed(2) }
+              R${ formContext.filling.price.toFixed(2) }
             </span>
           </p>
         </div>
@@ -49,7 +49,7 @@ export default function OrderPreview() {
 
       {formContext?.border && 
         <div>
-          <p className="font-semibold text-orange-400">Acompanhamento:</p>
+          <p className="font-semibold text-orange-400">Borda:</p>
           <p className="text-orange-900 capitalize">
             { formContext.border.name }
             <span className="ml-5 text-sm text-blue-500">
@@ -60,7 +60,9 @@ export default function OrderPreview() {
       }
 
       <div>
-        <p className="font-semibold text-orange-400">Sub-total:</p>
+        <p className="font-semibold text-orange-400">
+          { Number(formContext?.step) < 5 ? 'Sub-total:' : 'Total a pagar:'}
+        </p>
         <p className="text-orange-900 capitalize">
           R${ formContext?.priceSum.toFixed(2) }
         </p>

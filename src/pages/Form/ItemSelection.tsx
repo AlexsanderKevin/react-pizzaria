@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import FormCard from "./FormCard.tsx";
 
+interface IFormItem {
+  name: string;
+  price: number;
+}
 interface IItem {
   name: string;
   description: string;
@@ -9,10 +13,11 @@ interface IItem {
 }
 interface IItemSelectionProps {
   title: string;
-  itemsList: IItem[]
+  itemsList: IItem[];
+  changeFunction: React.Dispatch<React.SetStateAction<IFormItem|null>>;
+  itemField: IFormItem | null;
 }
-export default function ItemSelection({ title, itemsList }: IItemSelectionProps) {
-  const [ itemsSelected, setItemsSelected ] = useState<number>(0)
+export default function ItemSelection({ title, itemsList, changeFunction, itemField }: IItemSelectionProps) {
 
   return (
     <section className="mb-10">
@@ -22,12 +27,19 @@ export default function ItemSelection({ title, itemsList }: IItemSelectionProps)
         </h1>
 
         <p className="bg-gray-300 text-gray-700 font-semibold text-xs py-1 px-4 rounded">
-          {itemsSelected} / 1
+          {itemField ? 1 : 0} / 1
         </p>
       </div>
 
       <div className="">
-        {itemsList.map(item => <FormCard key={item.name} {...item}/>)}
+        {itemsList.map(item => (
+          <FormCard 
+            key={item.name} 
+            changeFunction={ changeFunction }
+            {...item} 
+            itemField={ itemField }
+          />
+        ))}
       </div>
     </section>
   )

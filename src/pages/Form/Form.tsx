@@ -47,16 +47,36 @@ export default function Form() {
           <div className="flex-1">
             <Routes>
               <Route path="/1" element={
-                <ItemSelection title="Escolha o Tamanho" itemsList={sizeList}/>
+                <ItemSelection 
+                  title="Escolha o Tamanho" 
+                  itemsList={sizeList} 
+                  changeFunction={formContext!.setSize}
+                  itemField={formContext!.size}
+                />
               }/>
               <Route path="/2" element={
-                <ItemSelection title="Escolha a Massa" itemsList={doughList}/>
+                <ItemSelection 
+                  title="Escolha a Massa" 
+                  itemsList={doughList} 
+                  changeFunction={formContext!.setDough}
+                  itemField={formContext!.dough}
+                />
               }/>
               <Route path="/3" element={
-                <ItemSelection title="Escolha o Recheio" itemsList={fillingList}/>
+                <ItemSelection 
+                  title="Escolha o Recheio" 
+                  itemsList={fillingList} 
+                  changeFunction={formContext!.setFilling}
+                  itemField={formContext!.filling}
+                />
               }/>
               <Route path="/4" element={
-                <ItemSelection title="Escolha a Borda" itemsList={borderList}/>
+                <ItemSelection 
+                  title="Escolha a Borda" 
+                  itemsList={borderList} 
+                  changeFunction={formContext!.setBorder}
+                  itemField={formContext!.border}
+                />
               }/>
               <Route path="/5" element={ null } />
             </Routes>
