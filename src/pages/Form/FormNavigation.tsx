@@ -27,7 +27,7 @@ export default function FormNavigation() {
       .split(',')
       .join(', ')
 
-      alert(`Você esqueceu de selecionar: ${missingItems.toString()}`)
+      alert(`Você esqueceu de selecionar: ${missingItems}`)
     }
 
   }
