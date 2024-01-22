@@ -14,10 +14,10 @@ function App() {
         <Header/>
         <BrowserRouter>
           <Routes>
-            <Route path='/' element={<Home />}/>
-            <Route path='form/*' element={<FormProvider><Form /></FormProvider> }/>
-            <Route path='finish-order' element={<FinishOrder />}/>
-            <Route path='*' element={<NotFound />}/>
+            <Route path='react-pizzaria/' element={<Home />}/>
+            <Route path='react-pizzaria/form/*' element={<FormProvider><Form /></FormProvider> }/>
+            <Route path='react-pizzaria/finish-order' element={<FinishOrder />}/>
+            <Route path='react-pizzaria/*' element={<NotFound />}/>
           </Routes>
         </BrowserRouter>
       </GlobalProvider>
