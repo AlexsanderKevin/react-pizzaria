@@ -1,4 +1,4 @@
-import { HashRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from './pages/Home/Home.tsx'
 import Header from "./components/Header/Header.tsx";
 import Form from "./pages/Form/Form.tsx";
