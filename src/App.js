@@ -12,7 +12,7 @@ function App() {
     <>
       <GlobalProvider>
         <Header/>
-        <HashRouter hashType="slash">
+        <HashRouter hashType="noslash">
           <Routes>
             <Route path='react-pizzaria/' element={<Home />}/>
             <Route path='react-pizzaria/form/*' element={<FormProvider><Form /></FormProvider> }/>
