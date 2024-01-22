@@ -5,7 +5,7 @@ export default function Brand() {
   return (
     <a 
       href="/react-pizzaria/"
-      className="flex gap-3 items-center active:scale-95 duration-300"
+      className="flex gap-3 items-center active:scale-95 duration-300 scale-75 sm:scale-100"
     >
       <img 
         className="h-12"

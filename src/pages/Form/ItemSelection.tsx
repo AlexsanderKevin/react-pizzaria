@@ -22,7 +22,7 @@ export default function ItemSelection({ title, itemsList, changeFunction, itemFi
   return (
     <section className="mb-10">
       <div className="flex justify-between items-center mb-5">
-        <h1 className="font-semibold text-blue-500 text-2xl">
+        <h1 className="font-semibold text-blue-500 text-xl sm:2xl">
           {title}:
         </h1>
 

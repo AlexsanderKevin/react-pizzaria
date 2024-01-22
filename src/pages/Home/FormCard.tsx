@@ -19,7 +19,7 @@ export default function FormCard() {
         <div className="h-60 w-full sm:h-full sm:w-72 bg-build-pizza bg-cover bg-center rounded-md" ></div>
 
         <div className="flex-1 flex h-full flex-col w-full p-4 pt-8 sm:pt-4">
-          <h1 className="text-3xl sm:text-5xl font-semibold text-blue-600">
+          <h1 className="text-2xl sm:text-5xl font-semibold text-blue-600">
             Ou monte sua pizza
           </h1>
           <p className="mb-5 mt-2 text-orange-400">

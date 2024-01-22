@@ -43,7 +43,7 @@ export default function FormCard({ imgUrl, name, description, price, changeFunct
 
         <div className="flex flex-col gap-2 p-4 flex-1">
           <div className="flex justify-between items-center">
-            <h1 className="font-semibold text-xl text-orange-400">{name}</h1>
+            <h1 className="font-semibold text-lg sm:text-xl text-start text-orange-400">{name}</h1>
             <input 
               type="radio" 
               name="radio" 

@@ -29,7 +29,7 @@ export default function Form() {
       <section className="bg-orange-100 py-1 px-4 pt-4 pb-16 flex justify-center">
         <div 
           className={`
-            w-full flex flex-col sm:gap-10 bg-white p-10 -translate-y-12 rounded-xl shadow-md gap-10  
+            w-full flex flex-col sm:gap-10 bg-white p-5 sm:p-10 -translate-y-12 rounded-xl shadow-md gap-10  
             ${Number(formContext?.step) < 5 ? 'max-w-screen-lg' : 'max-w-lg '}
             ${Number(formContext?.step) < 5 && 'sm:flex-row'}
           `}

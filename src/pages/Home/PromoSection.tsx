@@ -24,7 +24,7 @@ export default function PromoSection() {
             <p className="text-blue-600 font-semibold">
               Ganhe pontos ao pedir a
             </p>
-            <h1 className="text-white font-semibold text-6xl">
+            <h1 className="text-white font-semibold text-5xl sm:text-6xl">
               Pizza do dia
             </h1>
 

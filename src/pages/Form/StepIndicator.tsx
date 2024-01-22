@@ -36,7 +36,7 @@ export function Step({ stepNumber }: IStepProps) {
 
 export default function StepIndicator() {
   return (
-    <div className='flex w-full justify-center gap-5' >
+    <div className='flex w-full justify-center gap-5 scale-75 sm:scale-100' >
 
       <Step stepNumber={1}/>
       <Step stepNumber={2}/>
