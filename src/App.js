@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import Home from './pages/Home/Home.tsx'
 import Header from "./components/Header/Header.tsx";
 import Form from "./pages/Form/Form.tsx";
@@ -12,14 +12,14 @@ function App() {
     <>
       <GlobalProvider>
         <Header/>
-        <BrowserRouter>
+        <HashRouter>
           <Routes>
             <Route path='react-pizzaria/' element={<Home />}/>
             <Route path='react-pizzaria/form/*' element={<FormProvider><Form /></FormProvider> }/>
             <Route path='react-pizzaria/finish-order' element={<FinishOrder />}/>
             <Route path='react-pizzaria/*' element={<NotFound />}/>
           </Routes>
-        </BrowserRouter>
+        </HashRouter>
       </GlobalProvider>
     </>
   );
