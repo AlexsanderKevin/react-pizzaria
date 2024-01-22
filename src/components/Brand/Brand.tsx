@@ -4,7 +4,7 @@ import Logo from "../../assets/svg/pizza-logo.svg"
 export default function Brand() {
   return (
     <a 
-      href="react-pizzaria/"
+      href="/react-pizzaria/"
       className="flex gap-3 items-center active:scale-95 duration-300"
     >
       <img 

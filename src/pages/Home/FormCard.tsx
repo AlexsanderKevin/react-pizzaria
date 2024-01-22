@@ -34,7 +34,7 @@ export default function FormCard() {
 
           <Button 
             className="sm:w-40"
-            handleClick={() => navigate('/react-pizzaria/form/1')}
+            handleClick={() => navigate('form/1')}
           >
             Pedir
           </Button>

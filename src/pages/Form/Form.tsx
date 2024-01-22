@@ -40,7 +40,7 @@ export default function Form() {
             <OrderPreview/>
             <a 
               className="text-blue-600 font-semibold hover:text-blue-800"
-              href="react-pizzaria/"
+              href="/react-pizzaria/"
             >Cancelar</a>
           </div>
 
