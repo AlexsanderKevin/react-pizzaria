@@ -12,14 +12,14 @@ function App() {
     <>
       <GlobalProvider>
         <Header/>
-        <HashRouter hashType="noslash">
+        <BrowserRouter>
           <Routes>
             <Route path='react-pizzaria/' element={<Home />}/>
             <Route path='react-pizzaria/form/*' element={<FormProvider><Form /></FormProvider> }/>
             <Route path='react-pizzaria/finish-order' element={<FinishOrder />}/>
             <Route path='react-pizzaria/*' element={<NotFound />}/>
           </Routes>
-        </HashRouter>
+        </BrowserRouter>
       </GlobalProvider>
     </>
   );
