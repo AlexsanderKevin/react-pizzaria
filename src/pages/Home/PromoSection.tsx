@@ -52,7 +52,7 @@ export default function PromoSection() {
 
           <Button 
             className="sm:ml-14"
-            handleClick={() => navigate('/finish-order')}
+            handleClick={() => navigate('react-pizzaria/finish-order')}
           >
             Eu quero!
           </Button>

@@ -11,7 +11,7 @@ export default function FinishOrder() {
   const handleConfirmation = (): void => {
     addStoomPoints(promoPizza?.points || 0);
     alert(`Você ganhou ${promoPizza?.points} pontos!`)
-    navigate('/')
+    navigate('react-pizzaria/')
   }
 
   return (
@@ -55,7 +55,7 @@ export default function FinishOrder() {
           <div className="flex flex-col-reverse sm:flex-row gap-3 sm:gap-5 mt-5">
             <Button 
               type="secondary"
-              handleClick={() => navigate('/')}
+              handleClick={() => navigate('react-pizzaria/')}
               className="flex-1"
             >
               Voltar
