@@ -13,7 +13,7 @@ export default function FormNavigation() {
 
     if (areAllFieldsChecked) {
       alert('Pedido finalizado!')
-      navigate('react-pizzaria/')
+      navigate('/react-pizzaria/')
     }
     else {
       const missingItems = [ 
